@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student & Unit Registration</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #FFF8E1; /* cream */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* MENU */
+    .menu {
+        background-color: #0D47A1; /* dark blue */
+        padding: 10px;
+        color: white;
+    }
+
+    .menu span {
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /* FORM CONTAINER */
+    .container {
+        width: 90%;
+        max-width: 500px;
+        margin: 20px auto;
+        background: #FFF3CD;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #0D47A1;
+        text-align: center;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    /* BUTTONS */
+    .btn {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 48%;
+        font-weight: bold;
+    }
+
+    .submit {
+        background-color: #1976D2;
+        color: white;
+    }
+
+    .reset {
+        background-color: #FFC107;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<script>
+function showMessage() {
+    alert("Form submitted successfully!");
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="menu">
+    <span>File</span>
+    <span>Edit</span>
+    <span>Format</span>
+</div>
+
+<!-- STUDENT FORM -->
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <label>Full Name</label>
+    <input type="text">
+
+    <label>Student ID</label>
+    <input type="text">
+
+    <label>Email</label>
+    <input type="email">
+
+    <label>Phone Number</label>
+    <input type="text">
+
+    <label>Date of Birth</label>
+    <input type="date">
+
+    <label>Gender</label>
+    <select>
+        <option>Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <label>Course/Program</label>
+    <input type="text">
+
+    <label>Year of Study</label>
+    <select>
+        <option>Select Year</option>
+        <option>Year 1</option>
+        <option>Year 2</option>
+        <option>Year 3</option>
+        <option>Year 4</option>
+    </select>
+
+    <label>Address</label>
+    <textarea></textarea>
+
+    <label>Additional Comments</label>
+    <textarea></textarea>
+
+    <div class="btn-group">
+        <button class="btn submit" onclick="showMessage()">Submit</button>
+        <button class="btn reset" type="reset">Reset</button>
+    </div>
+</div>
+
+<!-- UNIT FORM -->
+<div class="container">
+    <h2>Unit Registration</h2>
+
+    <label>Unit Name</label>
+    <input type="text">
+
+    <label>Unit Code</label>
+    <input type="text">
+
+    <label>Lecturer</label>
+    <input type="text">
+
+    <label>Semester</label>
+    <select>
+        <option>Select Semester</option>
+        <option>Semester 1</option>
+        <option>Semester 2</option>
+    </select>
+
+    <label>
+        <input type="checkbox"> Active Unit
+    </label>
+
+    <div class="btn-group">
+        <button class="btn submit" onclick="showMessage()">Register</button>
+        <button class="btn reset" type="reset">Reset</button>
+    </div>
+</div>
+
+</body>
+</html>
